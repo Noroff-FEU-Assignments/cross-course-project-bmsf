@@ -34,6 +34,11 @@ header {
 	padding: 20px;
 }
 
+.navbar a {
+	text-decoration: none;
+	color: white;
+}
+
 .logo {
 	max-width: 30%;
 }
@@ -96,9 +101,9 @@ main {
 
 /* Sale box on desktop */
 
-/* .sale-box {
+.sale-box {
 	display: none;
-} */
+}
 
 /* 2336 3500kal */
 /* Extra small devices */
@@ -184,5 +189,35 @@ main {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.sale-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		transition-property: background;
+		transition-duration: 5s;
+		background-color: black;
+		width: 60%;
+		height: 350px;
+		margin-top: 20px;
+	}
+
+	.sale-box h1 {
+		color: white;
+		font-family: 'Lato';
+		text-transform: uppercase;
+		font-size: 80px;
+		inline-size: 100px;
+		overflow-wrap: break-word;
+	}
+
+	.sale-box p {
+		color: white;
+		font-family: 'Lato';
+		font-size: 25px;
 	}
 }
