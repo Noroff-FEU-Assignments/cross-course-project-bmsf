@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="list of jackets" />
+		<meta name="keywords" content="winter jackets, cold, html, css" />
+		<title>Buy winter jackets | RAINYDAYS</title>
+		<link rel="shortcut icon" type="image" href="./images/Logo.png" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="info-bar">
+				<p>Delivery: 1-3 Days</p>
+				<p>100% Satisfaction Guarantee</p>
+				<p>24/7 Customer support</p>
+			</div>
+			<nav class="navbar">
+				<a href="./index.html">
+					<img src="./images/logo-green.png" alt="image of logo" class="logo" />
+				</a>
+				<ul class="desktop-navbar">
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/list-of-jackets-men.html">Men</a></li>
+					<li><a href="/list-of-jackets-women.html">Women</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+					<div class="icon-wrapper-desktop">
+						<i class="far fa-user"></i>
+						<div class="vl"></div>
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</ul>
+				<div class="icon-wrapper">
+					<a href="/sign-in.html"><i class="far fa-user"></i></a>
+					<a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
+
+					<div class="vl"></div>
+					<label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+					<input type="checkbox" id="hamburger-menu" />
+					<nav class="hamburger-open">
+						<label for="hamburger-menu"><i class="fas fa-times"></i></label>
+						<input type="checkbox" id="hamburger-menu" />
+						<ul>
+							<li><a href="index.html" id="white-icon">Home</a></li>
+							<li>
+								<a href="list-of-jackets-men.html" id="white-icon">Men</a>
+							</li>
+							<li>
+								<a href="list-of-jackets-women.html" id="white-icon">Women</a>
+							</li>
+							<li>
+								<a href="about.html" id="white-icon">About</a>
+							</li>
+							<li>
+								<a href="contact.html" id="white-icon">Contact</a>
+							</li>
+						</ul>
+						<div class="flex socials">
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-facebook"></i>
+						</div>
+					</nav>
+				</div>
+			</nav>
+		</header>
+		<main id="order-summary-main">
+			<section class="order-summary">
+				<div class="order-summary-content">
+					<div class="flex title-div">
+						<h2>Order Summary</h2>
+						<img src="/images/Logo.png" alt="Image of logo" />
+					</div>
+					<div class="flex cart-form" id="product-div">
+						<img
+							src="/images/617135d1ca10a3786fda81f0_Group 113.jpeg"
+							alt="Image of jacket"
+							id="summary-image"
+						/>
+						<div class="flex text-div">
+							<p>Rhino jacket</p>
+							<p>Color: Black</p>
+							<p>Size: Large</p>
+						</div>
+						<p>3,900.00 NOK</p>
+					</div>
+
+					<div class="hl" id="white"></div>
+					<div class="flex cart-form" id="product-div">
+						<img
+							src="/images/617135d1ca10a3786fda81f0_Group 113.jpeg"
+							alt="Image of jacket"
+							id="summary-image"
+						/>
+						<div class="flex text-div">
+							<p>Rhino jacket</p>
+							<p>Color: Black</p>
+							<p>Size: Large</p>
+						</div>
+						<p>3,900.00 NOK</p>
+					</div>
+
+					<div class="hl" id="white"></div>
+
+					<div class="flex title-div" id="wrapper">
+						<p>Rabatt</p>
+						<p>0.00 NOK</p>
+					</div>
+					<div class="flex title-div" id="wrapper">
+						<p>Frakt</p>
+						<p>50.00 NOK</p>
+					</div>
+					<div class="hl" id="white"></div>
+					<div class="flex title-div" id="wrapper">
+						<p>Total</p>
+						<p>7.890.00 NOK</p>
+					</div>
+				</div>
+			</section>
+			<section class="contact-info">
+				<div class="contact-info-title"><h2>Contact information</h2></div>
+
+				<form class="payment-form">
+					<div class=""><label for="Email">Email address</label> <input /></div>
+
+					<label for="Password">Password</label>
+					<input />
+
+					<h2>Payment details</h2>
+
+					<label for="Card number">Card number</label>
+					<input />
+					<div class="form-div">
+						<div class="date">
+							<label for="Exipration date">Expiration date (MM/YY)</label>
+							<input />
+						</div>
+						<div class="cvc">
+							<label for="CVC">CVC</label>
+							<input />
+						</div>
+					</div>
+
+					<h2>Shipping address</h2>
+
+					<label for="Address">Address</label>
+					<input />
+
+					<div class="form-div" id="shipping-address">
+						<div class="date">
+							<label for="City">City</label>
+							<input />
+						</div>
+						<div class="date">
+							<label for=">Zip code">Zip code</label>
+							<input />
+						</div>
+						<div>
+							<label for="state">State</label>
+							<input />
+						</div>
+					</div>
+
+					<div class="buttons">
+						<a href="/product-page.html"
+							><button class="button" id="go-back">Go back</button></a
+						>
+						<a href="/checkout-success.html"
+							><button class="button" id="pay-now">Pay now</button></a
+						>
+					</div>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="list of jackets" />
+		<meta name="keywords" content="winter jackets, cold, html, css" />
+		<title>Buy winter jackets | RAINYDAYS</title>
+		<link rel="shortcut icon" type="image" href="./images/Logo.png" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<a href="./index.html">
+					<img src="./images/logo-green.png" alt="image of logo" class="logo" />
+				</a>
+				<ul class="desktop-navbar">
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/list-of-jackets-men.html">Men</a></li>
+					<li><a href="/list-of-jackets-women.html">Women</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+					<div class="icon-wrapper-desktop">
+						<i class="far fa-user"></i>
+						<div class="vl"></div>
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</ul>
+				<div class="icon-wrapper">
+					<a href="/sign-in.html"><i class="far fa-user"></i></a>
+					<a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
+
+					<div class="vl"></div>
+					<label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+					<input type="checkbox" id="hamburger-menu" />
+					<nav class="hamburger-open">
+						<label for="hamburger-menu"><i class="fas fa-times"></i></label>
+						<input type="checkbox" id="hamburger-menu" />
+						<ul>
+							<li><a href="index.html" id="white-icon">Home</a></li>
+							<li>
+								<a href="list-of-jackets-men.html" id="white-icon">Men</a>
+							</li>
+							<li>
+								<a href="list-of-jackets-women.html" id="white-icon">Women</a>
+							</li>
+							<li>
+								<a href="about.html" id="white-icon">About</a>
+							</li>
+							<li>
+								<a href="contact.html" id="white-icon">Contact</a>
+							</li>
+						</ul>
+						<div class="flex socials">
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-facebook"></i>
+						</div>
+					</nav>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<h1 class="cart-title">Shopping cart</h1>
+			<div class="flex desktop-category">
+				<p>Product</p>
+				<p>Price</p>
+				<p>Quantity</p>
+				<p>Total</p>
+			</div>
+			<div class="flex cart-form">
+				<img
+					src="/images/617135d1ca10a3786fda81f0_Group 113.jpeg"
+					alt="Image of jacket"
+					id="cart-image"
+				/>
+				<div class="flex text-div">
+					<h3 class="product-title">Rhino jacket</h3>
+					<p>Color: Black</p>
+					<p>Size: Large</p>
+				</div>
+				<i class="fas fa-trash"></i>
+			</div>
+			<div class="flex cart-form" id="mobile">
+				<div class="flex add-or-remove">
+					<i class="fas fa-minus"></i>
+					<p>1</p>
+					<i class="fas fa-plus"></i>
+				</div>
+				<p>3,900.00 NOK</p>
+			</div>
+			<div class="hl"></div>
+			<div class="subtotal">
+				<p>Subtotal: 3,900.00 NOK</p>
+			</div>
+
+			<a href="checkout.html"
+				><button class="explore-button" id="checkout-button">
+					Checkout
+				</button></a
+			>
+		</main>
+	</body>
+</html>

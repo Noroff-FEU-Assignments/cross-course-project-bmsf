@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Sign in page" />
+		<link rel="shortcut icon" type="image" href="./images/Logo.png" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+		<title>Sign in | RAINYDAYS</title>
+	</head>
+	<body>
+		<header>
+			<div class="info-bar">
+				<p>Delivery: 1-3 Days</p>
+				<p>100% Satisfaction Guarantee</p>
+				<p>24/7 Customer support</p>
+			</div>
+			<nav class="navbar">
+				<a href="./index.html">
+					<img src="./images/logo-green.png" alt="image of logo" class="logo" />
+				</a>
+				<ul class="desktop-navbar">
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/list-of-jackets-men.html">Men</a></li>
+					<li><a href="/list-of-jackets-women.html">Women</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+					<div class="icon-wrapper-desktop">
+						<i class="far fa-user"></i>
+						<div class="vl"></div>
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</ul>
+				<div class="icon-wrapper">
+					<a href="/sign-in.html"><i class="far fa-user"></i></a>
+					<a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
+
+					<div class="vl"></div>
+					<label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+					<input type="checkbox" id="hamburger-menu" />
+					<nav class="hamburger-open">
+						<label for="hamburger-menu"><i class="fas fa-times"></i></label>
+						<input type="checkbox" id="hamburger-menu" />
+						<ul>
+							<li><a href="index.html" id="white-icon">Home</a></li>
+							<li>
+								<a href="list-of-jackets-men.html" id="white-icon">Men</a>
+							</li>
+							<li>
+								<a href="list-of-jackets-women.html" id="white-icon">Women</a>
+							</li>
+							<li>
+								<a href="about.html" id="white-icon">About</a>
+							</li>
+							<li>
+								<a href="contact.html" id="white-icon">Contact</a>
+							</li>
+						</ul>
+						<div class="flex socials">
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-facebook"></i>
+						</div>
+					</nav>
+				</div>
+			</nav>
+		</header>
+		<main class="sign-in">
+			<h1>Sign in</h1>
+			<form class="login-form">
+				<label for="Email">Email address</label>
+				<input />
+				<label for="Password">Password</label>
+				<input/>
+			</form>
+	
+			<a>Forgot password?</a>
+			<div>
+				<input type="checkbox" name="Remember me" id="remember me"/>
+				<label for="remember me">Remember me</label>
+			</div>
+			
+			<button class="sign-in-button">Sign in</button>
+			<div class="or-container">
+				<hr class="hl"></hr>
+				<p>OR</p>
+				<div class="hl"></div>
+			</div>
+			<button class="sign-in-button" id="facebook">Connect with Facebook</button>
+			<button class="sign-in-button" id="google">Connect with Facebook</button>
+			<a><p>Don't have an account yet? Register now</p></a>
+		</main>
+	</body>
+</html>
