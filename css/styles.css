@@ -85,10 +85,6 @@ header {
 	color: white;
 }
 
-.logo {
-	/* max-width: 30%; */
-}
-
 .icon-wrapper {
 	color: var(--primary-color);
 	width: 35%;
