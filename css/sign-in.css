@@ -1,0 +1,61 @@
+.sign-in {
+	font-family: var(--primary-font);
+	padding: 0;
+}
+
+.sign-in a {
+	align-self: flex-start;
+}
+
+.sign-in h6 {
+	font-size: 20px;
+}
+
+.login-form input {
+	height: 40px;
+	width: 434px;
+	margin-bottom: 40px;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.sign-in-button {
+	background-color: var(--secondary-color);
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 434px;
+	height: 58px;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+	border-radius: 4px;
+	margin: 10px;
+}
+
+
+
+.or-container {
+	width: 442px;
+	display: flex;
+	justify-content: space-evenly;
+	border-bottom: 2px grey solid;
+}
+
+#facebook {
+	background-color: #2d4273;
+}
+
+#google {
+	background-color: #d34836;
+}
+
+.forgot-password {
+	width: 442px;
+	margin-bottom: 10px;
+}

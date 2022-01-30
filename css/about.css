@@ -1,0 +1,24 @@
+.container-about-us {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	align-content: stretch;
+}
+
+.image-about-us-mobile {
+	position: relative;
+}
+
+.container-about-us h1 {
+	position: absolute;
+	top: 150px;
+	font-family: var(--primary-font);
+	font-weight: 500;
+	font-size: 40px;
+}
+
+.paragraph-about-us {
+	font-family: var(--secondary-font);
+	width: 90%;
+	line-height: 25px;
+}

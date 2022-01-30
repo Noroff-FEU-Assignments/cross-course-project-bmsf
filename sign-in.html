@@ -7,6 +7,7 @@
 		<meta name="description" content="Sign in page" />
 		<link rel="shortcut icon" type="image" href="./images/Logo.png" />
 		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/sign-in.css">
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -81,22 +82,22 @@
 				<label for="Password">Password</label>
 				<input/>
 			</form>
-	
-			<a>Forgot password?</a>
-			<div>
+			<div class="forgot-password"><a>Forgot password?</a></div>
+			
+			<div class="forgot-password">
 				<input type="checkbox" name="Remember me" id="remember me"/>
 				<label for="remember me">Remember me</label>
 			</div>
 			
 			<button class="sign-in-button">Sign in</button>
 			<div class="or-container">
-				<hr class="hl"></hr>
+				<div class="hl"></div>
 				<p>OR</p>
 				<div class="hl"></div>
 			</div>
 			<button class="sign-in-button" id="facebook">Connect with Facebook</button>
 			<button class="sign-in-button" id="google">Connect with Facebook</button>
-			<a><p>Don't have an account yet? Register now</p></a>
+			<div class="forgot-passowrd"><p>Don't have an account yet? Register now</p></div>
 		</main>
 	</body>
 </html>
