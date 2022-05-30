@@ -7,7 +7,7 @@
 		<meta name="description" content="Sign in page" />
 		<link rel="shortcut icon" type="image" href="./images/Logo.png" />
 		<link rel="stylesheet" href="./css/styles.css" />
-		<link rel="stylesheet" href="./css/sign-in.css">
+		<link rel="stylesheet" href="./css/sign-in.css" />
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -15,6 +15,22 @@
 			crossorigin="anonymous"
 		/>
 		<title>Sign in | RAINYDAYS</title>
+		<!-- Hotjar Tracking Code for https://wonderful-payne-f634cd.netlify.app/ -->
+		<script>
+			(function (h, o, t, j, a, r) {
+				h.hj =
+					h.hj ||
+					function () {
+						(h.hj.q = h.hj.q || []).push(arguments);
+					};
+				h._hjSettings = { hjid: 2994464, hjsv: 6 };
+				a = o.getElementsByTagName('head')[0];
+				r = o.createElement('script');
+				r.async = 1;
+				r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+		</script>
 	</head>
 	<body>
 		<header>
@@ -80,24 +96,26 @@
 				<label for="Email">Email address</label>
 				<input />
 				<label for="Password">Password</label>
-				<input/>
+				<input />
 			</form>
 			<div class="forgot-password"><a>Forgot password?</a></div>
-			
+
 			<div class="forgot-password">
-				<input type="checkbox" name="Remember me" id="remember me"/>
+				<input type="checkbox" name="Remember me" id="remember me" />
 				<label for="remember me">Remember me</label>
 			</div>
-			
+
 			<button class="sign-in-button">Sign in</button>
 			<div class="or-container">
 				<div class="hl"></div>
 				<p>OR</p>
 				<div class="hl"></div>
 			</div>
-			<button class="sign-in-button" id="facebook">Connect with Facebook</button>
-			<button class="sign-in-button" id="google">Connect with Facebook</button>
-			<div class="forgot-passowrd"><p>Don't have an account yet? Register now</p></div>
+			<button class="sign-in-button facebook">Connect with Facebook</button>
+			<button class="sign-in-button google">Connect with Facebook</button>
+			<div class="forgot-password">
+				<p>Don't have an account yet? Register now</p>
+			</div>
 		</main>
 	</body>
 </html>

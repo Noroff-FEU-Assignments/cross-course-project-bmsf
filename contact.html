@@ -16,6 +16,22 @@
 			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
 			crossorigin="anonymous"
 		/>
+		<!-- Hotjar Tracking Code for https://wonderful-payne-f634cd.netlify.app/ -->
+		<script>
+			(function (h, o, t, j, a, r) {
+				h.hj =
+					h.hj ||
+					function () {
+						(h.hj.q = h.hj.q || []).push(arguments);
+					};
+				h._hjSettings = { hjid: 2994464, hjsv: 6 };
+				a = o.getElementsByTagName('head')[0];
+				r = o.createElement('script');
+				r.async = 1;
+				r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+		</script>
 	</head>
 	<body>
 		<header>
@@ -91,6 +107,33 @@
 					<p>24/7 live chat customer support</p>
 				</section>
 			</div>
+			<h2>Or send us a message right here:</h2>
+			<ul class="errorList">
+				<li class="nameError">Name was empty</li>
+				<li class="emailError">Email is invalid</li>
+				<li class="phoneError">Phone number must contain 8 numbers minimum</li>
+			</ul>
+			<div class="success">
+				<h3>
+					Success. We will try to answer your message as quickly as we can
+				</h3>
+			</div>
+			<form class="contact-input">
+				<input type="text" name="name" id="name" placeholder="Name" />
+
+				<input type="text" name="email" id="email" placeholder="Email" />
+
+				<input
+					type="number"
+					name="number"
+					id="number"
+					placeholder="Phone Number"
+					class="number"
+				/>
+				<textarea class="message" placeholder="Message"></textarea>
+				<input type="submit" class="submit-btn" />
+			</form>
 		</main>
+		<script src="./js/validation.js"></script>
 	</body>
 </html>

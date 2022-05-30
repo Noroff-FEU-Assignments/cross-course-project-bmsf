@@ -7,10 +7,6 @@
 	align-self: flex-start;
 }
 
-.sign-in h6 {
-	font-size: 20px;
-}
-
 .login-form input {
 	height: 40px;
 	width: 434px;
@@ -38,8 +34,6 @@
 	margin: 10px;
 }
 
-
-
 .or-container {
 	width: 442px;
 	display: flex;
@@ -47,11 +41,11 @@
 	border-bottom: 2px grey solid;
 }
 
-#facebook {
+.facebook {
 	background-color: #2d4273;
 }
 
-#google {
+.google {
 	background-color: #d34836;
 }
 
@@ -59,3 +53,4 @@
 	width: 442px;
 	margin-bottom: 10px;
 }
+

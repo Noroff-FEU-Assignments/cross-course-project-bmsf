@@ -1,3 +1,8 @@
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
 .contact-title {
 	font-size: 25px;
 }
@@ -33,4 +38,63 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
+}
+
+.contact-input {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+input,
+textarea {
+	padding: 1rem;
+	margin: 0.5rem;
+}
+
+.number {
+	grid-column: span 2;
+}
+
+.message {
+	grid-column: span 2;
+	min-height: 150px;
+	resize: vertical;
+}
+
+.submit-btn {
+	background-color: var(--secondary-color);
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 300px;
+	height: 58px;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	margin: 10px;
+}
+
+.errorList {
+	background-color: #fef6f6;
+	width: 45%;
+	border-left: 5px solid #ff6463;
+	display: none;
+	padding: 1rem;
+}
+
+.nameError,
+.emailError,
+.phoneError,
+.messageError {
+	display: none;
+}
+
+.success {
+	width: 43%;
+	background-color: rgb(115, 255, 208);
+	border-left: rgb(0, 150, 100) 5px solid;
+	padding: 1rem 2rem;
+	margin: 0.5rem;
+	display: none;
 }

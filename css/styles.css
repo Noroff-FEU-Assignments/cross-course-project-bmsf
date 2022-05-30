@@ -15,12 +15,6 @@ body {
 	font-family: var(--primary-font);
 }
 
-img,
-picture {
-	max-width: 100%;
-	/* display: block; */
-}
-
 h1 {
 	font-weight: 500;
 	color: var(--primary-color);
@@ -348,7 +342,6 @@ main {
 #hamburger-menu:checked ~ nav {
 	display: flex;
 	flex-direction: column;
-	align-items: space-around;
 	align-content: center;
 }
 
