@@ -35,7 +35,12 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar">
+			<div class="info-bar">
+				<p>Delivery: 1-3 Days</p>
+				<p>100% Satisfaction Guarantee</p>
+				<p>24/7 Customer support</p>
+			</div>
+			<div class="navbar">
 				<a href="./index.html">
 					<img src="./images/logo-green.png" alt="image of logo" class="logo" />
 				</a>
@@ -48,14 +53,18 @@
 					<div class="icon-wrapper-desktop">
 						<a href="/sign-in.html"><i class="far fa-user"></i></a>
 						<div class="vl"></div>
-						<a href="/shopping-cart.html"
-							><i class="fas fa-shopping-cart"></i
-						></a>
+						<a class="cart" href="/shopping-cart.html">
+							<i class="fas fa-shopping-cart"></i>
+							<div class="dot"></div>
+						</a>
 					</div>
 				</ul>
 				<div class="icon-wrapper">
 					<a href="/sign-in.html"><i class="far fa-user"></i></a>
-					<a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
+					<a class="cart" href="/shopping-cart.html"
+						><i class="fas fa-shopping-cart"></i>
+						<div class="dotMobile"></div
+					></a>
 
 					<div class="vl"></div>
 					<label for="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -84,7 +93,7 @@
 						</div>
 					</nav>
 				</div>
-			</nav>
+			</div>
 		</header>
 		<main>
 			<div class="image-header" id="women">
@@ -103,44 +112,9 @@
 					</select>
 				</div>
 			</div>
-			<div class="grid-container">
-				<a href="product-page.html">
-					<img src="./images/617135d1ca10a3786fda81f0_Group 113.jpeg" />
-					<p class="product-name">Rhino Jacket</p>
-					<p class="product-color">Dark grey</p>
-					<p clas="product-price">3.900,00 NOK</p>
-				</a>
-				<a href="product-page.html">
-					<img src="./images/617135d1ca10a3786fda81f0_Group 113.jpeg" />
-					<p class="product-name">Rhino Jacket</p>
-					<p class="product-color">Dark grey</p>
-					<p clas="product-price">3.900,00 NOK</p>
-				</a>
-				<a href="product-page.html">
-					<img src="./images/617135d1ca10a3786fda81f0_Group 113.jpeg" />
-					<p class="product-name">Rhino Jacket</p>
-					<p class="product-color">Dark grey</p>
-					<p clas="product-price">3.900,00 NOK</p>
-				</a>
-				<a href="product-page.html">
-					<img src="./images/617135d1ca10a3786fda81f0_Group 113.jpeg" />
-					<p class="product-name">Rhino Jacket</p>
-					<p class="product-color">Dark grey</p>
-					<p clas="product-price">3.900,00 NOK</p>
-				</a>
-				<a href="product-page.html">
-					<img src="./images/617135d1ca10a3786fda81f0_Group 113.jpeg" />
-					<p class="product-name">Rhino Jacket</p>
-					<p class="product-color">Dark grey</p>
-					<p clas="product-price">3.900,00 NOK</p>
-				</a>
-				<a href="product-page.html">
-					<img src="./images/617135d1ca10a3786fda81f0_Group 113.jpeg" />
-					<p class="product-name">Rhino Jacket</p>
-					<p class="product-color">Dark grey</p>
-					<p clas="product-price">3.900,00 NOK</p>
-				</a>
-			</div>
+			<div class="grid-container"></div>
 		</main>
+
+		<script src="js/shoppingCart.js" type="module"></script>
 	</body>
 </html>

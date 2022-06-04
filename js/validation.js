@@ -18,7 +18,7 @@ const validate = (event) => {
 
 	let emailValidate = false;
 
-	if (validateEmail(email.value) === true) {
+	if (emailValidationFunction(email.value) === true) {
 		emailError.style.display = 'none';
 		emailValidate = true;
 	} else {
@@ -26,9 +26,18 @@ const validate = (event) => {
 		errorList.style.display = 'block';
 	}
 
-	const validatePhone = validateLength(number.value, 8, phoneError);
+	let phoneValidate = false;
 
-	if (validateName && emailValidate && validateEmail && validatePhone) {
+	if (number.value.length > 7) {
+		phoneError.style.display = 'none';
+		phoneValidate = true;
+	} else {
+		phoneError.style.display = 'block';
+		errorList.style.display = 'block';
+		console.log(number.value);
+	}
+
+	if (validateName && emailValidate && phoneValidate) {
 		success.style.display = 'block';
 	}
 };
@@ -45,7 +54,7 @@ const validateLength = (value, len, errorType) => {
 	}
 };
 
-const validateEmail = (email) => {
+const emailValidationFunction = (email) => {
 	const regEx = /\S+@\S+\.\S/;
 	const patternMatches = regEx.test(email);
 	return patternMatches;

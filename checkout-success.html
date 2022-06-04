@@ -40,7 +40,7 @@
 				<p>100% Satisfaction Guarantee</p>
 				<p>24/7 Customer support</p>
 			</div>
-			<nav class="navbar">
+			<div class="navbar">
 				<a href="./index.html">
 					<img src="./images/logo-green.png" alt="image of logo" class="logo" />
 				</a>
@@ -53,14 +53,18 @@
 					<div class="icon-wrapper-desktop">
 						<a href="/sign-in.html"><i class="far fa-user"></i></a>
 						<div class="vl"></div>
-						<a href="/shopping-cart.html"
-							><i class="fas fa-shopping-cart"></i
-						></a>
+						<a class="cart" href="/shopping-cart.html">
+							<i class="fas fa-shopping-cart"></i>
+							<div class="dot"></div>
+						</a>
 					</div>
 				</ul>
 				<div class="icon-wrapper">
 					<a href="/sign-in.html"><i class="far fa-user"></i></a>
-					<a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
+					<a class="cart" href="/shopping-cart.html"
+						><i class="fas fa-shopping-cart"></i>
+						<div class="dotMobile"></div
+					></a>
 
 					<div class="vl"></div>
 					<label for="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -89,7 +93,7 @@
 						</div>
 					</nav>
 				</div>
-			</nav>
+			</div>
 		</header>
 		<main class="order-success">
 			<section>
@@ -105,15 +109,15 @@
 
 				<div class="flex images">
 					<img
-						src="/images/Picture 1.png"
+						src="/images/logo-green.png"
 						alt="Image of rainydays on instagram"
 					/>
 					<img
-						src="/images/Picture 2.png"
+						src="/images/617135d1ca10a3786fda81f0_Group 113.jpeg"
 						alt="Image of rainydays on instagram"
 					/>
 					<img
-						src="/images/Picture 6.png"
+						src="/images/hans-isaacson-GcuvEMEIRqE-unsplash.png"
 						alt="Image of rainydays on instagram"
 					/>
 				</div>
@@ -123,5 +127,6 @@
 				</div>
 			</section>
 		</main>
+		<script src="/js/shoppingCart.js"></script>
 	</body>
 </html>

@@ -47,8 +47,10 @@ body {
 
 input,
 textarea {
-	padding: 1rem;
-	margin: 0.5rem;
+	margin: 1rem 0.5rem;
+	height: 50px;
+	border: 1px #b4b4b4 solid;
+	border-radius: 5px;
 }
 
 .number {
@@ -88,6 +90,7 @@ textarea {
 .phoneError,
 .messageError {
 	display: none;
+	margin: 5px;
 }
 
 .success {

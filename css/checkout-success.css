@@ -11,6 +11,8 @@
 
 .images img {
 	margin: 10px;
+	max-width: 100px;
+	max-height: 100px;
 }
 
 .socials-checkout {
@@ -21,3 +23,5 @@
 .socials-checkout i {
 	margin: 10px;
 }
+
+

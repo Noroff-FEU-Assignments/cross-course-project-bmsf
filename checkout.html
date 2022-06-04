@@ -41,7 +41,7 @@
 				<p>100% Satisfaction Guarantee</p>
 				<p>24/7 Customer support</p>
 			</div>
-			<nav class="navbar">
+			<div class="navbar">
 				<a href="./index.html">
 					<img src="./images/logo-green.png" alt="image of logo" class="logo" />
 				</a>
@@ -54,14 +54,18 @@
 					<div class="icon-wrapper-desktop">
 						<a href="/sign-in.html"><i class="far fa-user"></i></a>
 						<div class="vl"></div>
-						<a href="/shopping-cart.html"
-							><i class="fas fa-shopping-cart"></i
-						></a>
+						<a class="cart" href="/shopping-cart.html">
+							<i class="fas fa-shopping-cart"></i>
+							<div class="dot"></div>
+						</a>
 					</div>
 				</ul>
 				<div class="icon-wrapper">
 					<a href="/sign-in.html"><i class="far fa-user"></i></a>
-					<a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
+					<a class="cart" href="/shopping-cart.html"
+						><i class="fas fa-shopping-cart"></i>
+						<div class="dotMobile"></div
+					></a>
 
 					<div class="vl"></div>
 					<label for="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -90,7 +94,7 @@
 						</div>
 					</nav>
 				</div>
-			</nav>
+			</div>
 		</header>
 		<main id="order-summary-main">
 			<section class="order-summary">
@@ -149,34 +153,46 @@
 				<div class="contact-info-title"><h2>Contact information</h2></div>
 
 				<form class="payment-form">
-					<div class=""><label for="Email">Email address</label> <input /></div>
+					<div>
+						<label for="Email">Email address</label>
+						<p class="email-error error">Wrong email format</p>
+						<input id="email" />
+					</div>
 
 					<label for="Password">Password</label>
-					<input />
+					<p class="password-error error">
+						Password must contain at least 8 characters
+					</p>
+					<input id="password" />
 
 					<h2>Payment details</h2>
 
 					<label for="Card number">Card number</label>
-					<input />
+					<p class="card-error error">Wrong credit card format</p>
+					<input id="card" />
 					<div class="form-div">
 						<div class="date">
-							<label for="Exipration date">Expiration date (MM/YY)</label>
-							<input />
+							<label for="Exipration date">Expiration date (MMYY)</label>
+							<p class="date-error error">Wrong date format (MMYY)</p>
+							<input id="date" />
 						</div>
 						<div class="cvc">
-							<label for="CVC">CVC</label>
-							<input />
+							<label for="CVV">CVV (3 digits)</label>
+							<p class="cvv-error error">Wrong CVV format</p>
+							<input name="cvv" id="cvv" />
 						</div>
 					</div>
 
 					<h2>Shipping address</h2>
 
 					<label for="Address">Address</label>
-					<input />
+
+					<input id="address" />
 
 					<div class="form-div" id="shipping-address">
 						<div class="date">
 							<label for="City">City</label>
+
 							<input />
 						</div>
 						<div class="date">
@@ -187,18 +203,19 @@
 							<label for="state">State</label>
 							<input />
 						</div>
+
+						<input type="submit" class="pay-now" value="Send order" />
 					</div>
 
-					<div class="buttons">
-						<a href="/product-page.html"
-							><button class="button" id="go-back">Go back</button></a
+					<!-- <div class="buttons">
+						<a href="/product-page.html" class="btn__order" id="go-back"
+							>Go back</a
 						>
-						<a href="checkout-success.html"
-							><button class="button" id="pay-now">Pay now</button></a
-						>
-					</div>
+						<a href="/checkout-success.html" id="pay-now">Pay now</a>
+					</div> -->
 				</form>
 			</section>
 		</main>
+		<script src="/js/checkoutValidation.js"></script>
 	</body>
 </html>

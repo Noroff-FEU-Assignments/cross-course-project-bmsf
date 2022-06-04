@@ -35,7 +35,12 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar">
+			<div class="info-bar">
+				<p>Delivery: 1-3 Days</p>
+				<p>100% Satisfaction Guarantee</p>
+				<p>24/7 Customer support</p>
+			</div>
+			<div class="navbar">
 				<a href="./index.html">
 					<img src="./images/logo-green.png" alt="image of logo" class="logo" />
 				</a>
@@ -48,14 +53,18 @@
 					<div class="icon-wrapper-desktop">
 						<a href="/sign-in.html"><i class="far fa-user"></i></a>
 						<div class="vl"></div>
-						<a href="/shopping-cart.html"
-							><i class="fas fa-shopping-cart"></i
-						></a>
+						<a class="cart" href="/shopping-cart.html">
+							<i class="fas fa-shopping-cart"></i>
+							<div class="dot"></div>
+						</a>
 					</div>
 				</ul>
 				<div class="icon-wrapper">
 					<a href="/sign-in.html"><i class="far fa-user"></i></a>
-					<a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
+					<a class="cart" href="/shopping-cart.html"
+						><i class="fas fa-shopping-cart"></i>
+						<div class="dotMobile"></div
+					></a>
 
 					<div class="vl"></div>
 					<label for="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -84,40 +93,45 @@
 						</div>
 					</nav>
 				</div>
-			</nav>
+			</div>
 		</header>
-		<main>
+		<main class="cart-main">
 			<h1 class="cart-title">Shopping cart</h1>
 
-			<div class="flex cart-form">
-				<img
-					src="/images/617135d1ca10a3786fda81f0_Group 113.jpeg"
-					alt="Image of jacket"
-					id="cart-image"
-				/>
-				<div class="flex text-div">
-					<h3 class="product-title">Rhino jacket</h3>
-					<p>Color: Black</p>
-					<p>Size: Large</p>
+			<!-- <div class="flex cart-form">
+					<img
+						src="/images/617135d1ca10a3786fda81f0_Group 113.jpeg"
+						alt="Image of jacket"
+						id="cart-image"
+					/>
+					<div class="flex text-div">
+						<h3 class="product-title">Rhino jacket</h3>
+						<p>Color: Black</p>
+						<p>Size: Large</p>
+					</div>
+					<i class="fas fa-trash"></i>
 				</div>
-				<i class="fas fa-trash"></i>
-			</div>
-			<div class="flex cart-form" id="mobile">
-				<div class="flex add-or-remove">
-					<i class="fas fa-minus"></i>
-					<p>1</p>
-					<i class="fas fa-plus"></i>
+				<div class="flex cart-form" id="mobile">
+					<div class="flex add-or-remove">
+						<i class="fas fa-minus"></i>
+						<p>1</p>
+						<i class="fas fa-plus"></i>
+					</div>
+					<p>3,900.00 NOK</p>
 				</div>
-				<p>3,900.00 NOK</p>
-			</div>
-			<div class="hl"></div>
-			<div class="subtotal">
-				<p>Subtotal: 3,900.00 NOK</p>
-			</div>
+				<div class="hl"></div>
 
-			<a href="checkout.html" class="flex-end"
-				><button class="button" id="checkout-button">Checkout</button></a
-			>
+				
+				<div class="subtotal">
+					<p>Subtotal: 3,900.00 NOK</p>
+				</div>
+
+				<a href="checkout.html" class="flex-end"
+					><button class="button" id="checkout-button">Checkout</button></a
+				> -->
+
+			<h4 class="empty">Cart is empty</h4>
 		</main>
+		<script src="js/shoppingCart.js" type="module"></script>
 	</body>
 </html>

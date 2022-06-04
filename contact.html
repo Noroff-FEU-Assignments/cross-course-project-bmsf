@@ -53,14 +53,18 @@
 					<div class="icon-wrapper-desktop">
 						<a href="/sign-in.html"><i class="far fa-user"></i></a>
 						<div class="vl"></div>
-						<a href="/shopping-cart.html"
-							><i class="fas fa-shopping-cart"></i
-						></a>
+						<a class="cart" href="/shopping-cart.html">
+							<i class="fas fa-shopping-cart"></i>
+							<div class="dot"></div>
+						</a>
 					</div>
 				</ul>
 				<div class="icon-wrapper">
 					<a href="/sign-in.html"><i class="far fa-user"></i></a>
-					<a href="/shopping-cart.html"><i class="fas fa-shopping-cart"></i></a>
+					<a class="cart" href="/shopping-cart.html"
+						><i class="fas fa-shopping-cart"></i>
+						<div class="dotMobile"></div
+					></a>
 
 					<div class="vl"></div>
 					<label for="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -111,7 +115,7 @@
 			<ul class="errorList">
 				<li class="nameError">Name was empty</li>
 				<li class="emailError">Email is invalid</li>
-				<li class="phoneError">Phone number must contain 8 numbers minimum</li>
+				<li class="phoneError">Phone number must contain 8 numbers</li>
 			</ul>
 			<div class="success">
 				<h3>
@@ -123,17 +127,12 @@
 
 				<input type="text" name="email" id="email" placeholder="Email" />
 
-				<input
-					type="number"
-					name="number"
-					id="number"
-					placeholder="Phone Number"
-					class="number"
-				/>
+				<input type="tel" name="number" id="number" placeholder="Phone Number"
+				class="number" " />
 				<textarea class="message" placeholder="Message"></textarea>
 				<input type="submit" class="submit-btn" />
 			</form>
 		</main>
-		<script src="./js/validation.js"></script>
+		<script src="./js/contactValidation.js"></script>
 	</body>
 </html>

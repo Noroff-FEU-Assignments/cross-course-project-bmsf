@@ -45,7 +45,7 @@ select {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	gap: 15px 10px;
+	gap: 2rem 5rem;
 }
 
 .grid-container a {
@@ -56,14 +56,17 @@ select {
 }
 
 .grid-container a img {
-	height: 10rem;
+	max-height: 20rem;
 	object-fit: cover;
+	width: 100%;
 }
+
+
 
 .product-name {
 	font-weight: 600;
 	font-family: var(--secondary-font);
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .product-color {
@@ -80,6 +83,7 @@ select {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 	}
+
 	.desktop-navbar {
 		display: flex;
 		list-style: none;
@@ -92,12 +96,5 @@ select {
 
 	.desktop-navbar a {
 		color: var(--primary-color);
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.grid-container {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
 	}
 }
