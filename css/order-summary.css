@@ -108,7 +108,6 @@ input {
 	margin-right: 30px;
 	display: flex;
 	justify-content: center;
-	
 }
 
 .btn__order {
@@ -160,4 +159,37 @@ input {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
+}
+
+.top-div {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px grey solid;
+}
+
+.order-success section {
+	margin: 20px;
+	text-align: center;
+}
+
+.images img {
+	margin: 10px;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.socials-checkout {
+	margin: 50px;
+	font-size: 50px;
+}
+
+.socials-checkout i {
+	margin: 10px;
+}
+
+.checkout-success {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

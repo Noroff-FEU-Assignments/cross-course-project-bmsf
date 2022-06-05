@@ -166,11 +166,11 @@ header {
 /* Main content */
 
 .cart {
-	
-	
-	
-	
 	display: 'none';
+}
+
+.price {
+	justify-content: space-between;
 }
 
 main {
@@ -199,7 +199,7 @@ main {
 	border-radius: 5px;
 	color: white;
 	cursor: pointer;
-	max-width: 150px;
+	max-width: 200px;
 }
 
 .product {

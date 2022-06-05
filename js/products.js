@@ -12,16 +12,16 @@ products.forEach((product) => {
 	let search = shoppingCart.find((x) => x.id === product.id) || [];
 	gridContainer.innerHTML += `
 		<div class='product'>
-			<a  href='product-page.html?id=${product.id}'>
+			<a  href='./product-page.html?id=${product.name}'>
 				<img class='product-image' src=${product.image}/>
 			</a>
 			<div class>
-				<p class="product-name">${product.name} - ${product.color}</p>
+				<p class="product-name">${product.name}</p>
 				<p class="product-color">${product.color}</p>
 			</div>
+			<div class="flex price"><p clas="product-price">${product.price}.00 NOK</p>
+			<button class='add-to-cart' data-product='${product.name}'>Add to cart</button></div>
 			
-			<p clas="product-price">${product.price}.00 NOK</p>
-			<button class='add-to-cart' data-product='${product.id}'>Add to cart</button>
 		</div>
 	`;
 });
@@ -34,31 +34,39 @@ const dotMobile = document.querySelector('.dotMobile');
 buttons.forEach((button) => {
 	button.onclick = function (event) {
 		let selectedItem = event.target.dataset.product;
-		let search = shoppingCart.find((x) => x.id === selectedItem);
+		let search = shoppingCart.find((x) => x.name === selectedItem);
 
 		if (search === undefined) {
 			shoppingCart.push({
-				id: selectedItem,
+				name: selectedItem,
 				item: 1,
 			});
 		} else {
 			search.item += 1;
 		}
 
-		// console.log(shoppingCart);
-
 		localStorage.setItem('data', JSON.stringify(shoppingCart));
 
 		calculate(selectedItem);
+
+		const handleBuy = () => {
+			button.style.backgroundColor = '#3f452c';
+
+			button.innerHTML = '<i class="fas fa-check"></i>';
+		};
+
+		handleBuy();
+
+		setTimeout(function () {
+			button.style.backgroundColor = 'orange';
+			button.innerHTML = 'Add to cart';
+		}, 2000);
 	};
 });
-
-const decrement = () => {};
 
 const calculate = (id) => {
 	let cartIconMobile = document.querySelector('.dotMobile');
 	let cartIcon = document.querySelector('.dot');
-	// let search = shoppingCart.find((x) => x.id === id);
 
 	cartIconMobile.innerHTML = shoppingCart
 		.map((x) => x.item)

@@ -1,6 +1,17 @@
+#product-info {
+	display: flex;
+}
+
+.container {
+	display: flex;
+	width: 80%;
+	position: relative;
+}
 .product-image {
-	height: auto;
-	width: 70%;
+	width: 40%;
+	position: absolute;
+	right: 0;
+	top: 5%;
 }
 
 .text-container {
@@ -10,8 +21,6 @@
 	align-items: flex-start;
 	width: 70%;
 }
-
-
 
 .size-container {
 	display: flex;
@@ -34,12 +43,12 @@
 }
 
 #add-to-cart {
-	margin: 20px 0;
+	margin: 20px 20px;
 }
 
 .description {
 	border-bottom: 2px black solid;
-	width: 100%;
+
 	justify-content: flex-start;
 }
 
@@ -60,4 +69,15 @@
 
 .product-info li {
 	margin-bottom: 15px;
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.product-image {
+		top: 35rem;
+		width: 100%;
+	}
 }

@@ -59,3 +59,7 @@ const emailValidationFunction = (email) => {
 	const patternMatches = regEx.test(email);
 	return patternMatches;
 };
+
+
+
+

@@ -12,12 +12,13 @@ const cvvError = document.querySelector('.cvv-error');
 const paymentForm = document.querySelector('.payment-form');
 const submit = document.querySelector('.pay-now');
 
+const orderSummaryContainer = document.querySelector('#order-summary-main');
+const orderSummarySuccess = document.querySelector('.checkout-success');
+
 const validateCheckout = (event) => {
 	event.preventDefault();
 
 	const passedEmail = validateFunction(/\S+@\S+\.\S/, email.value, emailError);
-
-	
 
 	const passedCard = validateFunction(
 		/^4[0-9]{12}(?:[0-9]{3})?$/,
@@ -35,16 +36,16 @@ const validateCheckout = (event) => {
 
 	const passedPassword = validateLength(password.value, 7, passwordError);
 
-	if (passedEmail && passedCard && passedDate && passedCVV && passedPassword) {
-		// submit.outerHTML += `<a href="/checkout-success.html"></a>`;
+	console.log(passedEmail);
+	console.log(passedCard);
+	console.log(passedDate);
+	console.log(passedCVV);
+	console.log(passedPassword);
 
-		console.log('');
+	if (passedEmail && passedCard && passedDate && passedCVV && passedPassword) {
+		orderSummaryContainer.style.display = 'none';
+		orderSummarySuccess.style.display = 'flex';
 	} else {
-		console.log(passedEmail);
-		console.log(passedCard);
-		console.log(passedDate);
-		console.log(passedCVV);
-		console.log(passedPassword);
 	}
 };
 
@@ -56,8 +57,10 @@ const validateFunction = (regex, value, error) => {
 
 	if (patternMatches) {
 		error.style.display = 'none';
+		return true;
 	} else {
 		error.style.display = 'block';
+		return false;
 	}
 };
 
@@ -67,6 +70,7 @@ const validateLength = (value, len, errorType) => {
 		return true;
 	} else {
 		errorType.style.display = 'block';
+		return false;
 	}
 };
 
