@@ -94,7 +94,7 @@ const createHTML = (products) => {
 // const sortProducts = (products) => {
 // 	const dropdown = document.querySelector('.dropdown');
 
-// 	dropdown.addEventListener('click', function (event) {
+// 	dropdown.addEventListener('change', function (event) {
 // 		console.log(event.target.value);
 // 		if (event.target.value === 'Name') {
 // 			products.sort(function (a, b) {
@@ -104,9 +104,9 @@ const createHTML = (products) => {
 // 					('hei');
 // 				}
 // 			});
-// 			createHTML(products);
 // 		} else {
 // 			console.log('hei');
 // 		}
+// 		createHTML(products);
 // 	});
 // };

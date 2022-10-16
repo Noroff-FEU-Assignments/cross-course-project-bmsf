@@ -1,4 +1,15 @@
-import { products } from './constants/productList.js';
+const url = 'https://www.course-assignment.store/wp-json/wc/store/products';
+
+const getProducts = async () => {
+	try {
+		const response = await fetch(url);
+		const getResults = await response.json();
+
+		generateCart(getResults);
+	} catch (error) {}
+};
+
+getProducts();
 
 const cartMain = document.querySelector('.cart-main');
 
@@ -19,6 +30,8 @@ const calculate = (id) => {
 
 calculate();
 
+console.log(shoppingCart);
+
 let search = products.find((x) => {
 	return x.name === shoppingCart.name;
 });
@@ -26,7 +39,11 @@ let search = products.find((x) => {
 const addBtn = document.querySelector('.add');
 const removeBtn = document.querySelector('#remove');
 
-const generateCart = () => {
+const generateCart = (products) => {
+	products.forEach((product) => {
+		console.log(product);
+	});
+
 	if (shoppingCart.length !== 0) {
 		return (cartMain.innerHTML = shoppingCart
 			.map((x) => {
